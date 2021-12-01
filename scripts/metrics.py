@@ -13,7 +13,7 @@ def gram_matrix(image):
 
 def content_fidelity(target_img, content_img, vgg) -> float:
     """
-    Compute the CF score of the target image.
+    Compute the Content Fidelity score of the target image.
 
     Parameters
     ----------
@@ -48,7 +48,7 @@ def content_fidelity(target_img, content_img, vgg) -> float:
 
 def global_colors(target_img, style_img, verbose=False) -> float:
     """
-    Compute the GC score of the target image.
+    Compute the Global Colors score of the target image.
 
     Parameters
     ----------
@@ -88,7 +88,7 @@ def global_colors(target_img, style_img, verbose=False) -> float:
     return GC
 
 
-def holistic_texture(target_img, style_img, vgg) -> float:
+def holistic_textures(target_img, style_img, vgg) -> float:
     """
     Compute the Holistic Texture score of the target image.
 
@@ -130,7 +130,7 @@ def holistic_texture(target_img, style_img, vgg) -> float:
 def global_effects(target_img, style_img, vgg):
     """The average of the Global Colors and Holistic Textures."""
     GC = global_colors(target_img, style_img)
-    HT = holistic_texture(target_img, style_img, vgg)
+    HT = holistic_textures(target_img, style_img, vgg)
     GE = 1/2*(GC + HT)
     return GE
 
