@@ -6,3 +6,11 @@ Style Transfer is the task of taking the style (colors, textures etc.) of one im
 
 This is the final project for the CSCI6505: Machine Learning course at Dalhousie University.
 
+
+
+**CSCI6505 Team 5 Members:**
+
+- Ryan O'Neil
+- Amit Baroi
+- Sarthak Patel
+- Piyush Menat
